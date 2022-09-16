@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Week1_0706012110032</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="title">Delete Animal</string>
+    <string name="supporting_text">Apakah Anda yakin ingin menghapus hewan ini?</string>
+</resources>
