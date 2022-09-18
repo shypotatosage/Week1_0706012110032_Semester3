@@ -8,6 +8,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.android.synthetic.main.activity_main.*
@@ -65,6 +66,7 @@ class MainActivity : AppCompatActivity(), CardListener, DeleteListener {
             }
             .setPositiveButton(resources.getString(R.string.delete)) { dialog, which ->
                 GlobalVar.listDataAnimal.removeAt(position)
+                Toast.makeText(applicationContext, "Berhasil menghapus data hewan", Toast.LENGTH_SHORT).show()
 
                 setUp()
                 adapter.notifyDataSetChanged()

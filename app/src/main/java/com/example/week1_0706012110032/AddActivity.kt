@@ -7,6 +7,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import kotlinx.android.synthetic.main.activity_add.*
 import kotlinx.android.synthetic.main.card_animal.*
@@ -91,6 +92,7 @@ class AddActivity : AppCompatActivity() {
                     }
                 }
 
+                Toast.makeText(applicationContext, "Berhasil menambahkan data hewan", Toast.LENGTH_SHORT).show()
                 finish()
             }
         }
