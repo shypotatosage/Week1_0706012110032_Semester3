@@ -82,7 +82,7 @@ class AddActivity : AppCompatActivity() {
                     if (urii.isNotEmpty()) {
                         GlobalVar.listDataAnimal[index].imageUri = urii
                     }
-                    
+
                     Toast.makeText(applicationContext, "Berhasil menambahkan data hewan", Toast.LENGTH_SHORT).show()
                 } else {
                     GlobalVar.listDataAnimal.get(position).name = animalNameTIL.editText?.text.toString().trim()
