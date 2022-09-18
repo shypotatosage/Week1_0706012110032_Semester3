@@ -82,6 +82,8 @@ class AddActivity : AppCompatActivity() {
                     if (urii.isNotEmpty()) {
                         GlobalVar.listDataAnimal[index].imageUri = urii
                     }
+                    
+                    Toast.makeText(applicationContext, "Berhasil menambahkan data hewan", Toast.LENGTH_SHORT).show()
                 } else {
                     GlobalVar.listDataAnimal.get(position).name = animalNameTIL.editText?.text.toString().trim()
                     GlobalVar.listDataAnimal.get(position).type = animalTypeTIL.editText?.text.toString().trim()
@@ -90,9 +92,10 @@ class AddActivity : AppCompatActivity() {
                     if (urii.isNotEmpty()) {
                         GlobalVar.listDataAnimal[position].imageUri = urii
                     }
+
+                    Toast.makeText(applicationContext, "Berhasil memperbarui data hewan", Toast.LENGTH_SHORT).show()
                 }
 
-                Toast.makeText(applicationContext, "Berhasil menambahkan data hewan", Toast.LENGTH_SHORT).show()
                 finish()
             }
         }
